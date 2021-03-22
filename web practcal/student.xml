@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet  type="text/css" href="student.css"?>
+<student>
+	<title>Student Information</title>
+	<student1>
+		<usn>1CR17MCA01</usn>
+		<name>Irfan</name>
+		<college>CMRIT</college>
+		<branch>MCA</branch>
+		<year>2017</year>
+		<email>irfan@cmrit.ac.in</email>
+	</student1>
+	<student2>
+		<usn>1CR17MCA02</usn>
+		<name>Gopi</name>
+		<college>CMRIT</college>
+		<branch>MCA</branch>
+		<year>2017</year>
+		<email>gopi@cmrit.ac.in</email>
+	</student2>
+	<student3>
+		<usn>1CR17MCA03</usn>
+		<name>Raghav</name>
+		<college>CMRIT</college>
+		<branch>MCA</branch>
+		<year>2017</year>
+		<email>raghav@cmrit.ac.in</email>
+	</student3>
+</student>

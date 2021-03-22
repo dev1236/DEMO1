@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Program 6a</title>
+		<script type="text/javascript">
+			var v1=0, v2=0, v3=0, tot=0, sale=0;
+			function fun1(t1)
+			{
+				v1=parseInt(t1);
+			
+			}
+			function fun2(t2)
+			{
+				v2=parseInt(t2);
+				
+			}
+			function fun3(t3)
+			{
+				v3=parseInt(t3);
+				
+			}
+			function show()
+			{
+				tot=parseInt(v1+v2+v3);
+				sale=(tot*0.05);
+				tot=tot+sale;
+				alert("Your total cost is : $"+(tot));
+				return false;
+			}
+		</script>
+	</head>
+	<body>
+		
+		<input type="checkbox" name="check1" value="59" onClick="fun1('59')">Apple 59 cents </br>
+		<input type="checkbox" name="check2" value="49" onClick="fun2('49')">Orange 49 cents </br>
+		<input type="checkbox" name="check3" value="39" onClick="fun3('39')">Banana 39 cents </br>
+		<input type="submit" value="submit" name="submit" onClick="show()" />
+	</body>
+</html>

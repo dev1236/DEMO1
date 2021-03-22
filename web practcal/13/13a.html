@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript" src="13.js"> </script>
+</head>
+<body>
+<h3> 15 character</h3>
+<textarea id="dev" maxlength="15"> </textarea>
+<div id="de"> 15 </div>
+<script>
+$(document).ready(function(){
+$("#dev").keyup(function(){
+var len = 15 - $(this).val().length;
+$("#de").text(len);
+});
+});
+</script>
+</body>
+</html>

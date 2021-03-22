@@ -1,0 +1,26 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+		function func()
+		{
+		var n=document.getElementById("dev").value;
+		var pos=/[0-4]{1}[A-Z]{2}[0-9]{2}[A-Z]{3}[0-9]{2}/
+		if(n.match(pos))
+			{
+				alert("valid format");
+			}
+		else
+			{
+				alert("invalid format");
+			}	
+			}
+		
+		</script>
+		<label>ENTER USN:</label>
+		<input type="text" name="USN" id="dev"/>
+		<input type="submit" name="vali" OnClick="func()"/>
+	</body>
+</html>	
+	

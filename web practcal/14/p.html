@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>lab14b</title>
+    <script type="text/javascript"
+            src="jquery-1.2.1.js"></script>
+			<style type="text/css">
+			#dev{
+			position:absolute;
+			height:50px;
+			width:50px;
+			background-color:red;
+			}
+			</style>
+  </head>
+
+  <body> 
+  <script>
+  $(document).ready(function(){
+	$("#id").click(function(){
+		$("#dev").each(function(){
+		$(this).animate(
+		{
+			width:$(this).width()* 2,
+			height:$(this).height() * 2 
+			},
+			'slow'
+			);
+	});
+	});
+  });
+  </script>
+<button id="id"> click</button>
+<br/>  
+  <div id="dev"> </div>
+  </body>
+</html>

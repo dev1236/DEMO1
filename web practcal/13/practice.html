@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="13.js"></script>
+		<meta charset="utf-8">
+		<title>lab13b</title>
+	</head>
+	<body>
+		<input type="checkbox" name="checkbox" value="y" id="d"/> i accept
+		<input type="submit" name="submit" value="submit" id="dd" disabled="disabled"/>
+		<script>
+		$(document).ready(function(){
+		$('#d').click(function(){
+			if ($('#dd').is(':disabled'))
+			{
+			$('#dd').removeAttr('disabled');
+			}
+		else{
+		$('#dd').attr('disabled', 'disabled');
+		}
+		});
+		});
+		</script>
+	</body>
+</html>

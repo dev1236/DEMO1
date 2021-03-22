@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Program 4</title>
+		<script type="text/javascript">
+			function median(list)
+			{
+				var len=list.length;
+				if((len%2)==1)
+					return list[Math.floor(len/2)]; //if length of array is odd
+				else
+					return Math.round((list[len/2-1]+list[len/2])/2); //if length of array is even
+			}
+			function mean(list,n)
+			{
+				var sum=0;
+				for(var i=0;i<n;i++)
+				{
+					 sum = sum+list[i];
+				}
+				return sum/n;
+			}
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var list = new Array(); //create new array
+			var n = prompt("Enter the total number of random numbers you want"); //user input
+			for(var i=0;i<n;i++) 
+			{
+				list[i] = Math.floor(Math.random() * 100); //generate random numbers between 1 to 100
+			}
+			document.write("Array of random numbers : ",list,"<br/>");
+			list.sort(function(a,b)
+			{
+			return a-b
+			}); //sorting array
+			document.write("Sorted random numbers array : ",list,"<br/>");
+			var med = median(list); //call to median function
+			document.write("Medain of an array is: ",med,"<br/>");
+			var list_mean = mean(list,n); //call to mean function
+			document.write("Mean of an array is: ",list_mean,"<br/>");
+			
+		</script>
+	</body>
+</html>

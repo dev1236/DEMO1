@@ -1,0 +1,53 @@
+<html>
+<head>
+<title> dev </title>
+<style type="text/css">
+.a{
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:0;
+	height:200px;
+	width:200px;
+	background-color:red;
+}
+.b2{
+	position:absolute;
+	left:100px;
+	top:100px;
+	z-index:0;
+	height:200px;
+	width:200px;
+	background-color:blue;
+}
+.c{
+	position:absolute;
+	left:200px;
+	top:200px;
+	z-index:0;
+	height:200px;
+	width:200px;
+	background-color:green;
+}
+</style>
+</head>
+<body>
+<p>dev
+<p class="a" id="p1" onmouseover="fun('p1')" onmouseout="fun1('p1')"> first frame </p>
+<p class="b2" id="p2" onmouseover="fun('p2')" onmouseout="fun1('p2')"> second frame </p>
+<p class="c" id="p3" onmouseover="fun('p3')" onmouseout="fun1('p3')"> third frame </p>
+<script>
+var o="p3";
+	function fun(n)
+	{
+	var d=document.getElementById(o).style; //by defoult p3 is appear fornt
+	var a=document.getElementById(n).style; //access new element
+	d.zIndex="0";
+	a.zIndex="10";
+	o=n;
+		
+	}
+	
+</script>
+</body>
+</html>

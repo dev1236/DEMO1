@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta encoding="utf-8">
+<script type="text/javascript" src="13.js">
+</script>
+</head>
+<body>
+<center> <button id="b"> Fade in </button>
+<button id="b1"> Fade out </button> </center>
+<br/>
+<center> <p id="dev"> devraj</p> </center>
+<script>
+	$(document).ready(function()
+	{
+	$("#b").click(function()
+	{
+		$("#dev").fadeIn(3000);
+	});
+	$("#b1").click(function()
+	{
+	$("#dev").fadeOut(5000);
+	});
+	});
+</script>
+</body>
+</html>

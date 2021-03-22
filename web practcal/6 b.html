@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Program 6b</title>
+		<script type="text/javascript">
+			var cost1=0, cost2=0, cost3=0, totcost=0, sale_cost=0;
+			function fun1(t1)
+			{
+				cost1=parseInt(t1);
+			
+			}
+			function fun2(t2)
+			{
+				cost2=parseInt(t2);
+				
+			}
+			function fun3(t3)
+			{
+				cost3=parseInt(t3);
+				
+			}
+			function show()
+			{
+				var qty1=parseInt(document.getElementById("qty1").value);
+				var qty2=parseInt(document.getElementById("qty2").value);
+				var qty3=parseInt(document.getElementById("qty2").value);
+				if(qty1){
+					cost1=parseInt(cost1*qty1);
+				}
+				if(qty2){
+					cost2=parseInt(cost2*qty2);
+				}
+				if(qty3){
+					cost3=parseInt(cost3*qty3);
+				}
+				totcost=cost1+cost2+cost3;
+				sale_cost=(totcost*0.05);
+				totcost=totcost+sale_cost;
+				alert("Your total cost is : $"+(totcost));
+				return false;
+			}
+		</script>
+	</head>
+	<body>
+		
+		<input type="checkbox" name="check1" value="59" onclick="fun1('59')">Apple 59 cents  Quantity:<input type="text" name="qty1" id="qty1"/></br>
+		<input type="checkbox" name="check2" value="49" onclick="fun2('49')">Orange 49 cents Quantity:<input type="text" name="qty2" id="qty2"/></br>
+		<input type="checkbox" name="check3" value="39" onclick="fun3('39')">Banana 39 cents Quantity:<input type="text" name="qty2" id="qty2"/></br>
+		<input type="submit" value="click" name="submit" onclick="show()" />
+	</body>
+</html>

@@ -1,0 +1,51 @@
+title{
+	display:block;
+	font-family:Arial;
+	font-size:25px;
+	color:blue;
+	text-align:center;
+}
+usn{
+	font-family:Arial;
+	font-size:20px;
+	color:red;
+	display:block;
+}
+name{
+	font-family:Arial;
+	font-size:20px;
+	color:green;
+	display:block;
+}
+year{
+	font-family:Arial;
+	font-size:20px;
+	color:brown;
+	display:block;
+}
+branch{
+	font-family:Arial;
+	font-size:20px;
+	color:orange;
+	display:block;
+}
+email{
+	font-family:Arial;
+	font-size:20px;
+	color:steelblue;
+	display:block;
+}
+college{
+	font-family:Arial;
+	font-size:20px;
+	color:pink;
+	display:block;
+}
+student1{
+	text-align:center;	
+}
+student2{
+	text-align:center;
+}student3{
+	text-align:center;
+}

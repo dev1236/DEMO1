@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"/>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> dev </title>
+<style type="text/css">
+.a{
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:0;
+	height:200px;
+	width:200px;
+	background-color:red;
+}
+.b{
+	position:absolute;
+	left:100px;
+	top:100px;
+	z-index:0;
+	height:200px;
+	width:200px;
+	background-color:blue;
+}
+.c{
+	position:absolute;
+	left:200px;
+	top:200px;
+	z-index:0;
+	height:200px;
+	width:200px;
+	background-color:green;
+}
+</style>
+</head>
+<body>
+<p class="a" id="p1" onmouseover="fun('p1')" onmouseout="fun1('p1')"> first frame </p>
+<p class="b" id="p2" onmouseover="fun('p2')" onmouseout="fun1('p2')"> second frame </p>
+<p class="c" id="p3" onmouseover="fun('p3')" onmouseout="fun1('p3')"> third frame </p>
+<script>
+var o="p3";
+	function fun(newid)
+	{
+	d=document.getElementById(o).style;
+	a=document.getElementById(n).style;
+	d.zIndex="0";
+	a.zIndex="10";
+	o=n;
+		
+	
+	function fun1(a)
+	{
+		document.getElementById(a).style.zIndex="0";
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+import java.util.*;
+class dev
+{
+    public static void main(String[] args)
+    {
+        int a,b,c,large;
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter a number");
+        a=s.nextInt();
+        System.out.println("enter b number");
+        b=s.nextInt();
+        System.out.println("enter c number");
+        c=s.nextInt();
+        if((a>b) && (a>c))
+        {
+            System.out.println("largest number is " + a);
+        }
+       if((b>a) && (b>c))
+       {
+           System.out.println("the large number is " + b);
+       }
+       
+         if((c>a) && (c>b))
+       {
+           System.out.println("the large number is " +b);
+       } 
+    }
+}

@@ -1,0 +1,39 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+		function func()
+		{
+		var n=document.getElementById("dev").value;
+		var n1=document.getElementById("dev2").value;
+		var pos=/[0-4]{1}[A-Z]{2}[0-9]{2}[A-Z]{3}[0-9]{2}/;
+		var pos2=/[1-6]{1}/;
+		if((n.match(pos)) && (n1.match(pos2)))
+			{
+				alert("valid format");
+			}
+		else if((n.match(pos)) && (!n1.match(pos2)))
+			{
+				alert("usn is match but sem is invalied");
+			}
+				else if((!n.match(pos)) && (n1.match(pos2)))
+				{
+				alert("usn in invalid but sem is valied");
+				}
+				else
+				{
+				alert("both");
+				}
+				
+			}
+		
+		</script>
+		<label>ENTER USN:</label>
+		<input type="text" name="USN" id="dev"/>
+		<label> Semester :</label>
+		<input type="text" name="USN" id="dev2"/>
+		<input type="submit" name="vali" OnClick="func()"/>
+	</body>
+</html>	
+	

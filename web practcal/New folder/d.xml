@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="a.css"?>
+<student>
+<title> Mca </title>
+<student1>
+<usn> 1CR19MCA02</usn>
+<name> Devraj </name>
+<college> CMRIT </college>
+<branch> MCA </branch>
+<year> 2019 </year>
+<email> devrajsaw1@gmail.com </email>
+</student1>
+<student2>
+<usn> 1CR19MCA02</usn>
+<name> Maxx </name>
+<college> CMRIT </college>
+<branch> MCA </branch>
+<year> 2019 </year>
+<email> devrajsaw1@gmail.com </email>
+</student2>
+<student3>
+<usn> 1CR19MCA02</usn>
+<name> Sashi </name>
+<college> CMRIT </college>
+<branch> MCA </branch>
+<year> 2019 </year>
+<email> devrajsaw1@gmail.com </email>
+</student3>
+</student>

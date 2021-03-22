@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Lab9a</title>
+			<style> 
+				#P
+				{ 
+				width: 50%; 
+				background-color: #ddd; 
+				} 
+
+				#m{ 
+				width: 2%; 
+				height: 20px; 
+				background-color: #4CAF50; 
+				} 
+			</style>
+	</head> 
+	<body> 
+		<p>Download Status of a File:</p> 
+		<div id="P"> 
+			<div id="m"></div> 
+		</div> 
+		<br/> 
+		<button onclick="update()">Start Download</button> 
+		<script> 
+			function update()
+			{
+				var a=document.getElementById("m");
+				width=1;
+				var i=setInterval(frame,5);
+				function frame()
+				{
+				if(width>=100)
+				{
+					clearInterval(i);
+				}
+				else
+				{
+					width++;
+					a.style.width=width+"%";
+				}
+				}
+			}
+		</script> 
+	</body> 
+</html> 
